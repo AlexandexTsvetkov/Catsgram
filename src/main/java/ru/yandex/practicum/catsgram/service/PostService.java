@@ -22,10 +22,6 @@ public class PostService {
     @Autowired
     public PostService(UserService userService) {
         this.posts = new HashMap<>();
-    }
-
-    @Autowired
-    public void setUserService(UserService userService) {
         this.userService = userService;
     }
 
