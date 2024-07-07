@@ -17,7 +17,7 @@ import java.util.Map;
 @Service
 public class PostService {
     private final Map<Long, Post> posts;
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
     public PostService(UserService userService) {
